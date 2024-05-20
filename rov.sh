@@ -17,7 +17,7 @@ nvm install --lts
 nvm use --lts
 
 # Install pnpm
-npm i -g pnpm
+npm i -g pnpm@9.1.1
 
 # Clone the robot
 cd ~
