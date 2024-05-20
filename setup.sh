@@ -5,6 +5,8 @@ sudo apt update
 sudo apt -y install ustreamer pigpio git
 
 # TODO: camera setup
+sudo apt -y install libcamera-tools
+sudo apt -y install libcamera-v4l2
 
 # Setup NVM & reload terminal
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash
