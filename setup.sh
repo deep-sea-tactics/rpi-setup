@@ -1,7 +1,8 @@
 #!/bin/sh
 
 # Install required dependencies
-sudo apt -y install ustreamer pigpio
+sudo apt update
+sudo apt -y install ustreamer pigpio git
 
 # TODO: camera setup
 
