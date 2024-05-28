@@ -37,6 +37,7 @@ echo "Installing PNPM"
 npm i -g pnpm@9.1.1
 
 # Link nvm to sudo
+echo "Linking NVM to allow sudo execution"
 n=$(which node); \
 n=${n%/bin/node}; \
 chmod -R 755 $n/bin/*; \
