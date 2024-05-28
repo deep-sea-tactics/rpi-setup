@@ -36,10 +36,16 @@ nvm use --lts
 echo "Installing PNPM"
 npm i -g pnpm@9.1.1
 
+# Link nvm to sudo
+n=$(which node); \
+n=${n%/bin/node}; \
+chmod -R 755 $n/bin/*; \
+sudo cp -r $n/{bin,lib,share} /usr/local
+
 # Clone the robot
 echo "Cloning Robot"
 cd ~
-git clone https://github.com/deep-sea-tactics/robot.git
+git clone https://github.com/deep-sea-tactics/robot.gitz
 cd ~/robot
 
 # Install dependencies
