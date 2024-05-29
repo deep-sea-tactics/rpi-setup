@@ -46,7 +46,7 @@ sudo cp -r $n/{bin,lib,share} /usr/local
 # Clone the robot
 echo "Cloning Robot"
 cd ~
-git clone https://github.com/deep-sea-tactics/robot.gitz
+git clone https://github.com/deep-sea-tactics/robot.git
 cd ~/robot
 
 # Install dependencies
