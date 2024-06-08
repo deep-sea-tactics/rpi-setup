@@ -3,7 +3,7 @@
 # Install required dependencies
 echo "Installing Required Dependencies"
 sudo apt update
-sudo apt -y install pigpio git
+sudo apt -y install pigpio git lm-sensors
 
 # Custom build ustreamer
 echo "Building Ustreamer"
