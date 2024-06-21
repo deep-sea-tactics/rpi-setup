@@ -2,12 +2,12 @@
 
 # Install required dependencies
 echo "Installing Required Dependencies"
-sudo apt update
-sudo apt -y install pigpio git lm-sensors
+sudo apt-get update
+sudo apt-get -y install pigpio git lm-sensors
 
 # Custom build ustreamer
 echo "Building ustreamer"
-sudo apt install -y libevent-dev libjpeg62-turbo libbsd-dev libgpiod-dev libsystemd-dev libjpeg-dev
+sudo apt-get install -y libevent-dev libjpeg62-turbo libbsd-dev libgpiod-dev libsystemd-dev libjpeg-dev
 cd ~
 git clone --depth=1 https://github.com/pikvm/ustreamer
 cd ~/ustreamer
@@ -18,8 +18,8 @@ sudo ln -s ~/ustreamer/ustreamer ustreamer
 
 # Fetch camera utilities
 echo "Setting up Camera"
-sudo apt -y install libcamera-tools
-sudo apt -y install libcamera-v4l2
+sudo apt-get -y install libcamera-tools
+sudo apt-get -y install libcamera-v4l2
 
 # Setup NVM & reload terminal
 echo "Installing NVM"
