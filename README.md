@@ -13,5 +13,5 @@ source <(curl -s https://raw.githubusercontent.com/deep-sea-tactics/rpi-setup/ma
 ## open camera
 
 ```sh
-libcamerify ustreamer --host :: --encoder=m2m-image
+ustreamer --host ::
 ```

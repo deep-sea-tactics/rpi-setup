@@ -6,7 +6,7 @@ sudo apt update
 sudo apt -y install pigpio git lm-sensors
 
 # Custom build ustreamer
-echo "Building Ustreamer"
+echo "Building ustreamer"
 sudo apt install -y libevent-dev libjpeg62-turbo libbsd-dev libgpiod-dev libsystemd-dev libjpeg-dev
 cd ~
 git clone --depth=1 https://github.com/pikvm/ustreamer

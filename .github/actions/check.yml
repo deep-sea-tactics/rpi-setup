@@ -1,0 +1,12 @@
+name: GitHub Actions Demo
+on:
+  push
+  pull_request
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+      - name: Run install script
+        run: source <(curl -s https://raw.githubusercontent.com/deep-sea-tactics/rpi-setup/main/rov.sh)
