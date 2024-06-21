@@ -16,11 +16,10 @@ cd /usr/bin
 sudo rm /usr/bin/ustreamer
 sudo ln -s ~/ustreamer/ustreamer ustreamer
 
-# TODO: camera setup
+# Fetch camera utilities
 echo "Setting up Camera"
 sudo apt -y install libcamera-tools
 sudo apt -y install libcamera-v4l2
-sudo modprobe bcm2835-v4l2
 
 # Setup NVM & reload terminal
 echo "Installing NVM"
